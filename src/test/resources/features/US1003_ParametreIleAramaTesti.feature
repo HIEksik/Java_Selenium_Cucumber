@@ -17,8 +17,8 @@
       Then  aradigi urunun bulunmadigini test eder
       And   sayfayi kapatir
 
-
-    Scenario: TC07 parametre ile arama yapilabilmeli
+    @wip
+    Scenario: TC09 parametre ile arama yapilabilmeli
       Given kullanici TestOtomasyon sayfasina gider
       And   "İphone" icin arama yapar
       Then  aradigi urunun bulundugunu test eder
