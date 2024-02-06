@@ -8,11 +8,11 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions( // Çalıştıracağı dosyaların yolunu ve ya dosyayı veya Class ı yazıyoruz .. Biz dosya yolunu yazdık...
 
-        plugin = "html:target/cucumber-reports.html", // Rapor yazar
+        plugin = "html:target/cucumber-reports.html", // Rapor yazar // ( cucumber-reports )> burası Raporun ismi
         features = "src/test/resources/features", // ÇAlıştıracağımız tüm feature dosyalarının dosya yolunu yazıyoruz
         glue = "stepdefinitions", // feature dosyalarını Java ile birleştiren , java ile çalışmasını sağlayan method.
         tags = "@wip", // wip tagı ile çalışmasını istedigimiz testi çalıştırıyoruz.. @wip tagı hangi testte çalıştığımızın işaretidir.
-        dryRun = false // default degerini seçiyoruz ve bitiyor
+        dryRun = false // true oldugunda sadece Eksik adım varmı diye kontrol eder // eksik adımı tamamlarız// false yapıp çalıştırırız
 )
 public class Runner {
     // Renner Class ı boş bir Class tır
