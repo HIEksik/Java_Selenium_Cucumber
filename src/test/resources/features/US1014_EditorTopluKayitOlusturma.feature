@@ -1,6 +1,6 @@
 Feature: US1014 Kullanici tablo olarak verilen degerlerle kayit olusturur
 
-  @wip
+
   Scenario Outline: TC22 Tablo olarak verilen bilgilerle kayit olusturula bilmeli
 
     When kullanici "editorUrl" anasayfaya gider
