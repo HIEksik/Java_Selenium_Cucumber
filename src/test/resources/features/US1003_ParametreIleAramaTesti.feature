@@ -2,6 +2,7 @@
 
   Feature: US1003 kullanici parametre olarak verilen urunu aratabilmeli
 
+
     Scenario: TC07 parametre ile arama yapilabilmeli
       Given kullanici TestOtomasyon sayfasina gider
       And   "baby" icin arama yapar
