@@ -20,6 +20,6 @@ public class Runner {
     // projenin build (Neyin nerede oldugunu hangi dosyalarla çalışacağını) edilmesini ve
     // İstenen feature dosyalarının toplu olarak çalıstırılmasını saglar
 
-    // Bu Class 2 notasyon kullanır 1. @RunWith () 2. @CucumberOptions
+    // Olusturdugumuz Class 2 notasyon kullanır 1. @RunWith () 2. @CucumberOptions
 
 }
