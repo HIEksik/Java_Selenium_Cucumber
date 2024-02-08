@@ -54,7 +54,7 @@ public class EditorStepdefinitions {
     }
     @When("kullanici ilk isim ile arama yapar")
     public void kullanici_ilk_isim_ile_arama_yapar() {
-        editorPage.searhButonu.sendKeys(firstName);
+        editorPage.searhAramaKutusu.sendKeys(firstName);
 
     }
     @Then("isim bolumunde isminin oldugunu dogrular")
@@ -67,6 +67,45 @@ public class EditorStepdefinitions {
         // İsimi arattıgımız zaman kaydettigimiz isimle tablodaki isimin bir birini içermesi gerekiyor
 
     }
+
+
+    @Then("{string} {string} {string} {string} {string} {string} {string} girer")
+    public void girer(String firstname, String lastname, String position, String office, String extention, String startdate, String salary) {
+
+        Actions actions=new Actions(Driver.getDriver()); // Tab kullanmak için oluşturduk
+
+        ReusableMethods.bekle(1);
+        actions.sendKeys(firstname)
+                .sendKeys(Keys.TAB)
+                .sendKeys(lastname)
+                .sendKeys(Keys.TAB)
+                .sendKeys(position)
+                .sendKeys(Keys.TAB)
+                .sendKeys(office)
+                .sendKeys(Keys.TAB)
+                .sendKeys(extention)
+                .sendKeys(Keys.TAB)
+                .sendKeys(startdate)
+                .sendKeys(Keys.TAB)
+                .sendKeys(salary)
+                .perform();
+
+        ReusableMethods.bekle(1);
+
+    }
+    @When("kullanici {string} ile arama yapar")
+    public void kullanici_ile_arama_yapar(String firstname) {
+      editorPage.searhAramaKutusu.sendKeys(firstname);
+    }
+    @Then("listede ilk ismin {string} icerdigini test eder")
+    public void listede_ilk_ismin_icerdigini_test_eder(String firstname) {
+
+        String actualIlkisim=editorPage.ilkIsimElementi.getText();
+
+        Assert.assertTrue(actualIlkisim.contains(firstname));
+
+    }
+
 
 
 }

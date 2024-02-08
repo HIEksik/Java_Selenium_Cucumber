@@ -13,7 +13,7 @@ public class EditorPage {
 
     @FindBy(xpath = "//*[@*='dt-button buttons-create']")public WebElement newButtonu;
   @FindBy(xpath = "//*[@class='DTE_Form_Buttons']")public WebElement cearteButonu;
-  @FindBy(xpath = "//input[@type='search']")public WebElement searhButonu;
+  @FindBy(xpath = "//input[@type='search']")public WebElement searhAramaKutusu;
   @FindBy(xpath = "//*[@class='sorting_1']")public WebElement ilkIsimElementi;
 
 
