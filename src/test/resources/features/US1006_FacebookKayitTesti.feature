@@ -1,5 +1,6 @@
 Feature: US1006 Kullanici facebook'a kayit icin form doldurabilmeli
 
+  @smoke
   Scenario: TC14 faker Class ile kullanici formu doldurulabilmeli
 
     Given kullanici "faceUrl" anasayfaya gider

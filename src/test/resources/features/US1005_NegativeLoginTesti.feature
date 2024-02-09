@@ -2,6 +2,7 @@
 Feature: US1005  Gecersiz bilgilerle sisteme giris yapilamamali
 
 
+  @smoke
   Scenario: TC11 Gecerli email, gecersiz password ile sisteme giris yapilamaz
 
     Given kullanici "toUrl" anasayfaya gider

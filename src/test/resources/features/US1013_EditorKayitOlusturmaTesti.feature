@@ -1,6 +1,6 @@
 Feature: US1013 Kullanicilar kayit olusturabilmeli
 
-
+@e2e
   Scenario: TC21 Kullanici verilen listeden kayit olusturabilmeli
 
     When kullanici "editorUrl" anasayfaya gider
