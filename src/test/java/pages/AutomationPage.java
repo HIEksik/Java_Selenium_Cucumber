@@ -10,9 +10,29 @@ public class AutomationPage {
     public AutomationPage(){
 
         PageFactory.initElements(Driver.getDriver(),this);
-
     }
 
-    @FindBy(xpath = "//*[@*='fa fa-lock']")public WebElement singUplLinki;
-    @FindBy(xpath = "(//input[@name='email'])[2]")public WebElement singUpEmailKutusu;
+    @FindBy(xpath = "//*[@*='fa fa-lock']")
+    public WebElement signUpLinki;
+
+    @FindBy(xpath = "(//input[@placeholder='Email Address'])[2]")
+    public WebElement signUpEmailKutusu;
+
+    @FindBy(xpath = "//*[text()='Signup']")
+    public WebElement signUpButonu;
+
+    @FindBy(xpath = "//*[@name='name']")
+    public WebElement isimKutusu;
+
+    @FindBy(id = "id_gender1")
+    public WebElement mrRadioButton;
+
+    @FindBy(id = "last_name")
+    public WebElement formSoyisimKutusu;
+
+    @FindBy(xpath = "//*[text()='Create Account']")
+    public WebElement createAccountButonu;
+
+    @FindBy(xpath = "//*[text()='Account Created!']")
+    public WebElement accountCreatedYazisi;
 }
